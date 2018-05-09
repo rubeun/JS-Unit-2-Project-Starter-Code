@@ -31,12 +31,9 @@ __Feed sources:__
 
 Give the user the ability to pull from a multiple news sources. Here are a few news sources we suggest:
 
-- [Reddit](https://www.reddit.com/dev/api)
-- [The Guardian](http://open-platform.theguardian.com/access/) 
-- [Hacker News](https://github.com/HackerNews/API)
-- [Daily WTF](http://thedailywtf.com/articles/tdwtf-api)
-- [Event Registry](https://eventregistry.org)
 - [newsapi.org](https://newsapi.org) (republishes a number of news sources)
+- [The Guardian](http://open-platform.theguardian.com/access/) 
+
 
 You should also feel free to use other news APIs; however, you will find that many APIs that do not support either [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) or [JSONp](https://en.wikipedia.org/wiki/JSONP) will result in a cross-domain restriction error ("No 'Access-Control-Allow-Origin' header is present...") in the browser. To get around this, you can use the following proxy server to filter your API requests.
 
@@ -62,14 +59,11 @@ $.get("https://accesscontrolalloworiginall.herokuapp.com/http://digg.com/api/new
 If you use your own feeds, they must have APIs with the following minimum
 requirements:
 
-- Each article must provide an image source for the circular thumbnail at the
-  left of the article.
-- Must provide either a category, tag, or custom taxonomy to display below the
-  title (of course title of article is also required).
-- Must provide a point, ranking, or some type of total impressions for the
-  respective article.
-- Must provide either a full version or a summary of the article for the pop up
-  screen.
+- Title of the article
+- Author of the article
+- Date the article was published
+- Link to the article's webpage
+
 
 __Feed rules:__
 
@@ -133,7 +127,7 @@ __Additional UI interaction rules:__
 ### Getting Started
 
 Begin by forking the starter code repository. You can do so by clicking the "Fork" icon on
-the top right of [this page](https://github.com/generalassembly-studio/JS-Unit-2-Project-Starter-Code). Once
+the top right of [this page](https://github.com/larissam/JS-Unit-2-Project-Starter-Code). Once
 complete, clone the repository to your computer by running the following
 commands:
 
@@ -185,8 +179,4 @@ Here are some sugestions on where to start:
 
 ### Project Feedback + Evaluation
 
-When your project is complete, push the final version to your fork on GitHub and send the link to Larissa and Sasha. You do not need to create a pull request for this project.
-
-If you'd like to schedule a 30-minute code review, let Sasha and Larissa know. This is an opportunity for you to demonstrate your app and explain how you coded it, and for the instructional team to give you feedback on what you did well as well as things you might consider doing differently or adding for your future coding projects. 
-
-A code review is optional, so if you'd like to participate in one, it is up to you to contact Sasha and Larissa to schedule it once your project is done.
+When your project is complete, push the final version to your fork on GitHub and send the link to Larissa. You do not need to create a pull request for this project.
