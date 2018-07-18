@@ -23,13 +23,13 @@ Design Note:
   In terms of speed and reducing number of API calls, I opted to preload all the popup data in the dataset field for future use.
 */
 
-const NEWSAPI_API_KEY = "146aea77fa2f467bb37f0f9321905389";
-const GUARDIAN_API_KEY = "fe15f1e3-9574-46c3-80da-71a6ee67df93";
-const NEWYORKTIMES_API_KEY = "e3e8b6f0004e410f9d94d73fd6e2d362";
+const NEWSAPI_API_KEY = "";
+const GUARDIAN_API_KEY = "";
+const NEWYORKTIMES_API_KEY = "";
 
-const NEWSAPI_API_URL = "https://newsapi.org/v2/top-headlines?";
-const GUARDIAN_API_URL = "";
-const NEWYORKTIMES_API_URL = "";
+//const NEWSAPI_API_URL = "";
+//const GUARDIAN_API_URL = "";
+//const NEWYORKTIMES_API_URL = "";
 
 const $popup = $('#popUp');
 
